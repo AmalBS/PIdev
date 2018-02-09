@@ -17,7 +17,10 @@ class DefaultController extends Controller
     }
     public function registAction()
     {
-        return $this->render('@PIdev/Regist.html.twig');
+        return $this->render('@PIdev/layout.html.twig');
     }
+
+
+
 
 }

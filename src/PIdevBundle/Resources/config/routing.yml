@@ -75,4 +75,6 @@ pi_error:
     path:     /error
     defaults: { _controller: PIdevBundle:EspAdmin:error}
 
-
+redirect_register:
+    path:     /register/confirmed
+    defaults: { _controller: PIdevBundle:Default:regist}
