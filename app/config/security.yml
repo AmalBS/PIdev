@@ -4,8 +4,8 @@ security:
 
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
-        ROLE_VETERINAIRE:       ROLE_USER
-        ROLE_ASSOCIATION:       ROLE_USER
+        ROLE_VETERINAIRE:       ROLE_VETERINAIRE
+        ROLE_ASSOCIATION:       ROLE_ASSOCIATION
         ROLE_SUPER_ADMIN: ROLE_ADMIN
 
     providers:
@@ -20,7 +20,8 @@ security:
                 csrf_token_generator: security.csrf.token_manager
                 success_handler: redirect.after.login
 
-            logout:       true
+            logout:
+                target: /login
             anonymous:    true
 
     access_control:
