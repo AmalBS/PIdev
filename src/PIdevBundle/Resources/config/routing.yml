@@ -1,0 +1,78 @@
+p_idev_homepage:
+    path:     /
+    defaults: { _controller: PIdevBundle:Default:index }
+p_idev_homeVet:
+      path:     /acceuilVet
+      defaults: { _controller: PIdevBundle:Veterinaire:AcceuilV }
+p_idev_homeAssociation:
+      path:     /acceuilAss
+      defaults: { _controller: PIdevBundle:Association:AcceuilAss }
+p_idev_home:
+    path:     /acceuil
+    defaults: { _controller: PIdevBundle:Default:layout }
+Regist:
+    path:     /regist
+    defaults: { _controller: PIdevBundle:Default:regist }
+authentification:
+    path:     /authentification
+    defaults: { _controller:  }
+Acceuil_Animal:
+    path:     /acceuilAnimal
+    defaults: { _controller: PIdevBundle:Animal:AcceuilAnimal}
+Acceuil_Produit:
+    path:     /acceuilProduit
+    defaults: { _controller: PIdevBundle:Produit:AcceuilProduit}
+Acceuil_Association:
+    path:     /acceuilAssociation
+    defaults: { _controller: PIdevBundle:Association:AcceuilAssociation}
+Acceuil_Veterinaire:
+    path:     /acceuilVeterinaire
+    defaults: { _controller: PIdevBundle:Veterinaire:AcceuilVeterinaire}
+Acceuil_Reclamation:
+    path:     /acceuilReclamation
+    defaults: { _controller: PIdevBundle:Reclamation:AcceuilReclamation}
+pi_dashboard:
+    path:     /dashBoard
+    defaults: { _controller: PIdevBundle:EspAdmin:dashBoard }
+
+pi_profil:
+    path:     /profil
+    defaults: { _controller: PIdevBundle:EspAdmin:profil }
+
+pi_ajoutAdmin:
+    path:     /ajoutAdmin
+    defaults: { _controller: PIdevBundle:EspAdmin:ajoutAdmin }
+
+pi_tableAdmin:
+    path:     /tableAdmin
+    defaults: { _controller: PIdevBundle:EspAdmin:tableAdmin }
+
+pi_tableAnimaux:
+    path:     /tableAnimaux
+    defaults: { _controller: PIdevBundle:EspAdmin:tableAnimaux }
+
+pi_tableAssociation:
+    path:     /tableAssociation
+    defaults: { _controller: PIdevBundle:EspAdmin:tableAssociation }
+
+pi_tableProduits:
+    path:     /tableProduits
+    defaults: { _controller: PIdevBundle:EspAdmin:tableProduits }
+
+pi_tableRec:
+    path:     /tableRec
+    defaults: { _controller: PIdevBundle:EspAdmin:tableRec }
+
+pi_tableVet:
+    path:     /tableVet
+    defaults: { _controller: PIdevBundle:EspAdmin:tableVet }
+
+pi_blankpage:
+    path:     /blank
+    defaults: { _controller: PIdevBundle:EspAdmin:blank }
+
+pi_error:
+    path:     /error
+    defaults: { _controller: PIdevBundle:EspAdmin:error}
+
+

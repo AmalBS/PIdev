@@ -1,0 +1,76 @@
+{% extends "PIdevBundle:Admin:Layout.html.twig" %}
+{% block titrePage %}
+
+    <div class="row page-titles">
+        <div class="col-md-5 col-8 align-self-center">
+            <h3 class="text-themecolor">Table</h3>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ path('pi_dashboard')}}">Accueil</a></li>
+                <li class="breadcrumb-item active">Table</li>
+            </ol>
+        </div>
+    </div>
+{% endblock %}
+{% block body %}
+    <div class="row">
+        <!-- column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title">Demandes d'ajout de Veterinaires</h4>
+                    {#<h6 class="card-subtitle"> <code></code></h6>#}
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

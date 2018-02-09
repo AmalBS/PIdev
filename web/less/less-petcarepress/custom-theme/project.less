@@ -1,0 +1,55 @@
+/*
+ * project.less
+ * -----------------------------------------------
+*/
+.project {
+  .thumb {
+    position: relative;
+    overflow: hidden;
+    &:after {
+      background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+      content: "";
+      height: 100%;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      opacity: 0;
+      position: absolute;
+      transition-duration: 0.3s;
+      width: 0;
+      transition: .5s ease;
+    }
+  }
+  .hover-link {
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    transition-duration: 0.3s;
+    z-index: 9;
+    i {
+      color: @white-base;
+      display: block;
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+  .project-details {
+    background: @white-base none repeat scroll 0 0;
+    transition-duration: 0.3s;
+  }
+  &:hover {
+    .thumb::after {
+      opacity: 1;
+      left: 0%;
+      width: 100%;
+    }
+    .hover-link {
+      opacity: 1;
+    }
+    .project-details {
+      .title, .sub-title {
+        color: @white-base;
+      }
+    }
+  }
+}

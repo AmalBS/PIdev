@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+{% block head %}
+<head>
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="PetCarePress | Pet Care, Pets Club, Veterinary & Shop HTML5 Template" />
+    <meta name="keywords" content="Pet,Pet Care,Pets Club,Dog,Cat,Veterinary,Veterinary & Shop" />
+    <meta name="author" content="ThemeMascot" />
+
+    <!-- Page Title -->
+    <title>Zanimo</title>
+
+    <!-- Favicon and Touch Icons -->
+    <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/png">
+    <link href="{{ asset('images/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('images/apple-touch-icon-72x72.png') }}" rel="apple-touch-icon" sizes="72x72">
+    <link href="{{ asset('images/apple-touch-icon-114x114.png') }}" rel="apple-touch-icon" sizes="114x114">
+    <link href="{{ asset('images/apple-touch-icon-144x144.png') }}" rel="apple-touch-icon" sizes="144x144">
+
+    <!-- Stylesheet -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/animate.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/css-plugin-collections.css')}}" rel="stylesheet"/>
+    <!-- CSS | menuzord megamenu skins -->
+    <link href="{{ asset('css/menuzord-megamenu.css')}}" rel="stylesheet"/>
+    <link id="menuzord-menu-skins" href="{{ asset('css/menuzord-skins/menuzord-boxed.css')}}" rel="stylesheet"/>
+    <!-- CSS | Main style file -->
+    <link href="{{ asset('css/style-main.css')}}" rel="stylesheet" type="text/css">
+    <!-- CSS | Preloader Styles -->
+    <link href="{{ asset('css/preloader.css')}}" rel="stylesheet" type="text/css">
+    <!-- CSS | Custom Margin Padding Collection -->
+    <link href="{{ asset('css/custom-bootstrap-margin-padding.css')}}" rel="stylesheet" type="text/css">
+    <!-- CSS | Responsive media queries -->
+    <link href="{{ asset('css/responsive.css')}}" rel="stylesheet" type="text/css">
+    <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+    <!-- <link href="{{ asset('css/style.css')}}" rel="stylesheet" type="text/css"> -->
+
+    <!-- Revolution Slider 5.x CSS settings -->
+    <link  href="{{ asset('js/revolution-slider/css/settings.css')}}" rel="stylesheet" type="text/css"/>
+    <link  href="{{ asset('js/revolution-slider/css/layers.css')}}" rel="stylesheet" type="text/css"/>
+    <link  href="{{ asset('js/revolution-slider/css/navigation.css')}}" rel="stylesheet" type="text/css"/>
+
+    <!-- CSS | Theme Color -->
+    <link href="{{ asset('css/colors/theme-skin-color-set1.css')}}" rel="stylesheet" type="text/css">
+
+    <script src="{{ asset('js/jquery-2.2.4.min.js')}}"></script>
+    <script src="{{ asset('js/jquery-ui.min.js')}}"></script>
+</head>
+ <body class="has-side-panel side-panel-right fullwidth-page">
+<div id="wrapper" class="clearfix">
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="spinner">
+            <img alt="" src="{{ asset('images/preloaders/5.gif')}}">
+        </div>
+        <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+
+        <div class="col-md-5">
+            <div class="widget m-0 pull-right sm-pull-none sm-text-center">
+                <ul class="list-inline pull-right">
+                </ul>
+            </div>
+
+
+        </div>
+        {% endblock %}
+
+
+
+        <div class="header-nav">
+            <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+                <div class="container">
+
+                    <nav id="menuzord-right" class="menuzord  no-bg">
+                        <a class="menuzord-brand pull-left flip mb-15" >
+                            <img src="{{ asset('/PIdev1/web/images/Zanimaux2.jpg') }}" alt="" style="height: 200px;">                        <ul class="list-inline nav-side-icon-list pull-right">
+
+
+
+                        </ul>
+                        </a>
+                        {% block nav %}
+                        <ul class="menuzord-menu">
+                            <li><a href="{{ path('Acceuil_Animal') }}">Animaux</a>
+
+                            </li>
+                            <li><a href="{{ path('Acceuil_Produit') }}">Produits</a>
+                                <ul class="dropdown">
+                                    <li><a href="">Accessoires</a></li>
+                                    <li><a href="">Aliments</a></li>
+                                    <li><a href="">Pharmaceutiques</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="{{ path('Acceuil_Veterinaire') }}">Vétérinaires</a>
+
+                            </li>
+                            <li><a href="{{ path('Acceuil_Association') }}">Associations</a>
+                                <ul class="dropdown">
+                                    <li><a href="">Associations</a></li>
+
+                                    <li><a href="">Evénéments</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            {% block rec %}  {% endblock %}
+
+                            </li>
+
+                            <li><a   href="{{ path('fos_user_security_login') }}"> se connecter </a> </li>
+                        </ul>
+
+                    </nav>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+{% block footer %}
+<!-- Footer -->
+<footer id="footer" class="footer bg-black-111" data-bg-img="images/footer-bg.png">
+    <div class="container pt-70 pb-40">
+        <div class="row border-bottom-black">
+            <div class="col-sm-6 col-md-3">
+                <div class="widget dark">
+                    <img class="mt-10 mb-20" alt="" src="{{ asset('images/logoaccueil2.png') }}">
+                </div>
+                <div class="widget dark">
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-3 hidden-sm">
+                <div class="widget dark">
+
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-3 hidden-sm">
+
+                <div class="widget dark">
+                    <div class="widget dark">
+                        <h5 class="widget-title line-bottom pt-10">Rejoindre-Nous</h5>
+                        <ul class="styled-icons icon-dark mt-20">
+                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.1s;"><a href="#" data-bg-color="#3B5998" style="background: rgb(59, 89, 152) !important;"><i class="fa fa-facebook"></i></a></li>
+                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.2s;"><a href="#" data-bg-color="#02B0E8" style="background: rgb(2, 176, 232) !important;"><i class="fa fa-twitter"></i></a></li>
+                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".3s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s;"><a href="#" data-bg-color="#05A7E3" style="background: rgb(5, 167, 227) !important;"><i class="fa fa-skype"></i></a></li>
+                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s;"><a href="#" data-bg-color="#A11312" style="background: rgb(161, 19, 18) !important;"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.5s;"><a href="#" data-bg-color="#C22E2A" style="background: rgb(194, 46, 42) !important;"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget dark">
+                    <!-- Mailchimp Subscription Form Starts Here -->
+                    <form id="mailchimp-subscription-form-footer" class="newsletter-form">
+
+                    </form>
+                    <!-- Mailchimp Subscription Form Validation-->
+                    <script type="text/javascript">
+                        $('#mailchimp-subscription-form-footer').ajaxChimp({
+                            callback: mailChimpCallBack,
+                            url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+                        });
+
+                        function mailChimpCallBack(resp) {
+                            // Hide any previous response text
+                            var $mailchimpform = $('#mailchimp-subscription-form-footer'),
+                                $response = '';
+                            $mailchimpform.children(".alert").remove();
+                            if (resp.result === 'success') {
+                                $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                            } else if (resp.result === 'error') {
+                                $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                            }
+                            $mailchimpform.prepend($response);
+                        }
+                    </script>
+                    <!-- Mailchimp Subscription Form Ends Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- end wrapper -->
+
+<!-- Footer Scripts -->
+<!-- external javascripts -->
+
+<script src="{{ asset('js/bootstrap.min.js')}}"></script>
+<!-- JS | jquery plugin collection for this theme -->
+<script src="{{ asset('js/jquery-plugin-collection.js')}}"></script>
+
+<!-- Revolution Slider 5.x SCRIPTS -->
+<script src="{{ asset('js/revolution-slider/js/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{ asset('js/revolution-slider/js/jquery.themepunch.revolution.min.js')}}"></script>
+
+
+
+<!-- JS | Custom script for all pages -->
+<script src="{{ asset('js/custom.js')}}"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+      (Load Extensions only on Local File Systems !
+       The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.actions.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.migration.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/revolution-slider/js/extensions/revolution.extension.video.min.js')}}"></script>
+ </body>
+{% endblock %}

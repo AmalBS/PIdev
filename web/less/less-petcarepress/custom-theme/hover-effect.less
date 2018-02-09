@@ -1,0 +1,63 @@
+/*
+ * hover-effect.less
+ * -----------------------------------------------
+*/
+.hover-effect {
+  .thumb {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      .transition(all .3s ease);
+      width: 100%;
+    }
+  }
+
+  .hover-link {
+    left: 0;
+    margin: 0 auto;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    text-align: center;
+    .transition(all .3s ease);
+    z-index: 9;
+  }
+
+  .details {
+    background: @white-f6;
+    border-bottom: 3px solid @gray-eee;
+    .transition(all .3s ease);
+    .sub-title {
+      color: @black-999;
+    }
+  }
+
+  &:hover {
+    .thumb::after {
+      background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+      opacity: 1;
+      transition: .5s ease;
+    }
+
+    .hover-link {
+      opacity: 1;
+      top: 44%;
+    }
+
+    .details {
+      background: @black-222;
+      border-bottom-color: @black-333;
+      .title, .sub-title {
+        color: @white-base;
+      }
+    }
+  }
+}

@@ -1,0 +1,248 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: GHRIB-INFO
+ * Date: 2/6/2018
+ * Time: 9:17 PM
+ */
+
+namespace PIdevBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+
+
+/**Class Produit
+ * @package AppBundle\Entity
+ */
+
+/**
+ * @ORM\Entity(repositoryClass="Doctrine\ORM\EntityRepository")
+ */
+
+
+class Produit
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $reference;
+
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $typeProduit;
+
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $nom;
+
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $marque;
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $prix;
+
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $description;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $confirmation;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     * @ORM\JoinColumn("user_id",referencedColumnName="id")
+     */
+    private $user;
+
+
+
+    /**
+     * Get reference
+     *
+     * @return integer
+     */
+    public function getReference()
+    {
+        return $this->reference;
+    }
+
+    /**
+     * Set typeProduit
+     *
+     * @param string $typeProduit
+     *
+     * @return Produit
+     */
+    public function setTypeProduit($typeProduit)
+    {
+        $this->typeProduit = $typeProduit;
+
+        return $this;
+    }
+
+    /**
+     * Get typeProduit
+     *
+     * @return string
+     */
+    public function getTypeProduit()
+    {
+        return $this->typeProduit;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return Produit
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set marque
+     *
+     * @param string $marque
+     *
+     * @return Produit
+     */
+    public function setMarque($marque)
+    {
+        $this->marque = $marque;
+
+        return $this;
+    }
+
+    /**
+     * Get marque
+     *
+     * @return string
+     */
+    public function getMarque()
+    {
+        return $this->marque;
+    }
+
+    /**
+     * Set prix
+     *
+     * @param float $prix
+     *
+     * @return Produit
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+
+        return $this;
+    }
+
+    /**
+     * Get prix
+     *
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Produit
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set confirmation
+     *
+     * @param boolean $confirmation
+     *
+     * @return Produit
+     */
+    public function setConfirmation($confirmation)
+    {
+        $this->confirmation = $confirmation;
+
+        return $this;
+    }
+
+    /**
+     * Get confirmation
+     *
+     * @return boolean
+     */
+    public function getConfirmation()
+    {
+        return $this->confirmation;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \AppBundle\Entity\User $user
+     *
+     * @return Produit
+     */
+    public function setUser(\AppBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \AppBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+
+}
