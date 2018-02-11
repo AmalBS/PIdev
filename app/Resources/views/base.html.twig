@@ -54,8 +54,8 @@
 <div id="wrapper" class="clearfix">
     <!-- preloader -->
     <div id="preloader">
-        <div id="spinner">
-            <img alt="" src="{{ asset('images/preloaders/5.gif')}}">
+        <div class="col-md-2">
+            <img src="{{ asset('images/preloaders/3.gif') }}" alt="">
         </div>
         <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
     </div>
@@ -135,25 +135,10 @@
 {% endblock %}
 {% block footer %}
 <!-- Footer -->
-<footer id="footer" class="footer bg-black-111" data-bg-img="images/footer-bg.png">
+<footer id="footer" class="footer bg-black-100" data-bg-img="{{ asset('images/footer-bg.png') }}" >
     <div class="container pt-70 pb-40">
         <div class="row border-bottom-black">
-            <div class="col-sm-6 col-md-3">
-                <div class="widget dark">
-                    <img class="mt-10 mb-20" alt="" src="{{ asset('images/logoaccueil2.png') }}">
-                </div>
-                <div class="widget dark">
 
-                </div>
-
-            </div>
-
-            <div class="col-sm-6 col-md-3 hidden-sm">
-                <div class="widget dark">
-
-                </div>
-
-            </div>
             <div class="col-sm-6 col-md-3 hidden-sm">
 
                 <div class="widget dark">
@@ -168,39 +153,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="widget dark">
-                    <!-- Mailchimp Subscription Form Starts Here -->
-                    <form id="mailchimp-subscription-form-footer" class="newsletter-form">
-
-                    </form>
-                    <!-- Mailchimp Subscription Form Validation-->
-                    <script type="text/javascript">
-                        $('#mailchimp-subscription-form-footer').ajaxChimp({
-                            callback: mailChimpCallBack,
-                            url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
-                        });
-
-                        function mailChimpCallBack(resp) {
-                            // Hide any previous response text
-                            var $mailchimpform = $('#mailchimp-subscription-form-footer'),
-                                $response = '';
-                            $mailchimpform.children(".alert").remove();
-                            if (resp.result === 'success') {
-                                $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                            } else if (resp.result === 'error') {
-                                $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
-                            }
-                            $mailchimpform.prepend($response);
-                        }
-                    </script>
-                    <!-- Mailchimp Subscription Form Ends Here -->
-                </div>
             </div>
         </div>
     </div>
 
 </footer>
-
+<a class="scrollToTop" href="#" style="display: inline;"><i class="fa fa-angle-up"></i></a>
 <!-- end wrapper -->
 
 <!-- Footer Scripts -->
