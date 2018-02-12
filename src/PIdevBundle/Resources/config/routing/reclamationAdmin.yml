@@ -1,0 +1,18 @@
+Acceuil_Reclamation:
+    path:     /acceuilReclamation
+    defaults: { _controller: PIdevBundle:Reclamation2:AcceuilReclamation}
+pi_tableRec:
+    path:     /tableRec
+    defaults: { _controller: PIdevBundle:EspAdmin:tableRec }
+pi_tableRecDetail:
+    path:     /tableRecDetail
+    defaults: { _controller: PIdevBundle:EspAdmin:tableRec }
+Delete_Rec:
+      path:     /Delete/{id}
+      defaults: { _controller: PIdevBundle:EspaceReclamations:Delete}
+reclamation_List:
+    path:     /affiche
+    defaults: { _controller: "PIdevBundle:EspAdmin:tableRec" }
+reclamation_Reponse:
+    path:     /reponse
+    defaults: { _controller: "PIdevBundle:EspAdmin:Reponse" }

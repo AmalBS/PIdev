@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block auth %}
+    <li><a>Reclamation</a></li>
+    <li><a   href="{{ path('fos_user_security_logout') }}"> se déconneter </a> </li>
+
+{% endblock %}
+{% block content %}
+    {{ parent() }}
+    hhh
+{% endblock %}
