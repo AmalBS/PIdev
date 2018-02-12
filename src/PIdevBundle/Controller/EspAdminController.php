@@ -47,10 +47,28 @@ class EspAdminController extends Controller
     {
         return $this->render('@PIdev/Admin/tableProduits/table.html.twig');
     }
-    public function tableRecAction()
+    public function pi_tableRecDetail()
+
+
     {
-        return $this->render('@PIdev/Admin/tableRec/table.html.twig');
+        $em = $this->getDoctrine()->getManager()->getRepository("PIdevBundle:Reclamation")->findAll();
+        return $this->render('@PIdev/Admin/tableRec/table.html.twig', array("reclamations" => $em));
     }
+    public function tableRecAction()
+
+
+    {
+        $em = $this->getDoctrine()->getManager()->getRepository("PIdevBundle:Reclamation")->findAll();
+        return $this->render('@PIdev/Admin/tableRec/table.html.twig', array("reclamations" => $em));
+    }
+    public function ReponseAction()
+
+
+    {
+        return $this->render('@PIdev/Admin/tableRec/Reponse.html.twig');
+    }
+
+
     public function tableVetAction()
     {
         return $this->render('@PIdev/Admin/tableVet/table.html.twig');

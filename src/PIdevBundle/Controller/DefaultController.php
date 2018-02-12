@@ -10,10 +10,13 @@ class DefaultController extends Controller
     {
         return $this->render('PIdevBundle:Default:index.html.twig');
     }
-
-    public function layoutAction()
+    public function AcceuilAction()
     {
         return $this->render('PIdevBundle::layout.html.twig');
+    }
+    public function layoutAction()
+    {
+        return $this->render('PIdevBundle::AcceuilConMembre.html.twig');
     }
     public function registAction()
     {

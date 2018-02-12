@@ -1,6 +1,13 @@
+p_idev_reclamation:
+    resource: "@PIdevBundle/Resources/config/routing/reclamation.yml"
+    prefix:   /reclamation
+p_idev_reclamationAdmin:
+    resource: "@PIdevBundle/Resources/config/routing/reclamationAdmin.yml"
+    prefix:   /reclamationAdmin
+
 p_idev_homepage:
-    path:     /
-    defaults: { _controller: PIdevBundle:Default:index }
+    path:     /acceuilPrincipal
+    defaults: { _controller: PIdevBundle:Default:Acceuil }
 p_idev_homeVet:
       path:     /acceuilVet
       defaults: { _controller: PIdevBundle:Veterinaire:AcceuilV }
@@ -28,9 +35,6 @@ Acceuil_Association:
 Acceuil_Veterinaire:
     path:     /acceuilVeterinaire
     defaults: { _controller: PIdevBundle:Veterinaire:AcceuilVeterinaire}
-Acceuil_Reclamation:
-    path:     /acceuilReclamation
-    defaults: { _controller: PIdevBundle:Reclamation:AcceuilReclamation}
 pi_dashboard:
     path:     /dashBoard
     defaults: { _controller: PIdevBundle:EspAdmin:dashBoard }
@@ -58,11 +62,6 @@ pi_tableAssociation:
 pi_tableProduits:
     path:     /tableProduits
     defaults: { _controller: PIdevBundle:EspAdmin:tableProduits }
-
-pi_tableRec:
-    path:     /tableRec
-    defaults: { _controller: PIdevBundle:EspAdmin:tableRec }
-
 pi_tableVet:
     path:     /tableVet
     defaults: { _controller: PIdevBundle:EspAdmin:tableVet }

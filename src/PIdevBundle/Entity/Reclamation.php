@@ -9,7 +9,7 @@
 namespace PIdevBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
-/**Class Reclamation
+/**Class Reclamation2
  * @package AppBundle\Entity
  */
 

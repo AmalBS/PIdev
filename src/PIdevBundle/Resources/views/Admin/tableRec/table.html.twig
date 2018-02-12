@@ -10,67 +10,42 @@
             </ol>
         </div>
     </div>
+    <div align="right" class="nav-item hidden-sm-down search-box">
+        <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
+        <form class="app-search" style="display: none;">
+            <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+    </div>
 {% endblock %}
 {% block body %}
-    <div class="row">
-        <!-- column -->
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-block">
-                    <h4 class="card-title">Liste des Reclamations </h4>
-                    {#<h6 class="card-subtitle"> <code></code></h6>#}
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+        <center><h1> Listes des reclamations </h1></center>
+        <br>
+        <br>
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+                <th> Id utilisateur</th>
+                <th> Objet</th>
+                <th> Description</th>
+                <th> status</th>
+
+
+            </tr>
+            {% for reclamation in reclamations %}
+                <tr>
+                    <td>{{ reclamation.id }}</td>
+                    <td>{{ reclamation.objet }}</td>
+                    <td>{{ reclamation.description }}</td>
+                    <td>{{ reclamation.statut }}</td>
+                    <td ><a href="{{ path('Delete_Rec',{'id':reclamation.id }) }}" target="_blank">supprimer</a> </td>
+                    <td><a href="{{ path('pi_tableRecDetail',{'id':reclamation.id ,'objet':reclamation.objet , 'description':reclamation.description,'statut':reclamation.statut}) }}" target="_blank">Detail</a> </td>
+                    <td ><a href="{{ path('reclamation_Reponse',{'id':reclamation.id }) }}" target="_blank">Repondre</a> </td>
+
+
+                </tr>
+
+            {% endfor %}
+        </table>
     </div>
 {% endblock %}
