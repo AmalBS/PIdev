@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2946375-49eb-4125-9601-9da24b88f544" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PIdevBundle/Form/ReclamationType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/config/routing/reclamation.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PIdevBundle/Tests/Controller/ReclamationControllerTest.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PIdevBundle/Controller/ReclamationController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Reclamation/AcceuilReclamation.html.twig" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/PIdevBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Controller/EspAdminController.php" afterPath="$PROJECT_DIR$/src/PIdevBundle/Controller/EspAdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Entity/Reclamation.php" afterPath="$PROJECT_DIR$/src/PIdevBundle/Entity/Reclamation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/Layout.html.twig" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/Layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/blank/blank.html.twig" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/blank/blank.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/tableRec/table.html.twig" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/tableRec/table.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Animal/AcceuilAnimal.html.twig" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/Animal/AcceuilAnimal.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/views/layout.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reponse.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Reponse.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/tableRec/Reponse.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -63,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
@@ -157,7 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>javascript:void(0)</find>
       <find>list-inline text-right flip sm-text-center</find>
       <find>Read More</find>
       <find>1920</find>
@@ -187,6 +171,7 @@
       <find>prel</find>
       <find>footer bg-black-100</find>
       <find>loading</find>
+      <find>load</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -499,7 +484,7 @@
       <workItem from="1518205111910" duration="2537000" />
       <workItem from="1518290885774" duration="9538000" />
       <workItem from="1518440793189" duration="1960000" />
-      <workItem from="1518445097393" duration="22596000" />
+      <workItem from="1518445097393" duration="22772000" />
     </task>
     <task id="LOCAL-00001" summary="modification">
       <created>1518205166911</created>
@@ -529,16 +514,24 @@
       <option name="project" value="LOCAL" />
       <updated>1518346406275</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" partie reclamation">
+      <created>1518475204972</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1518475204972</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125804000" />
+    <option name="totallyTimeSpent" value="125980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -999,18 +992,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/tableRec/Reponse.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PIdevBundle/Resources/views/Admin/tableRec/Reponse.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
