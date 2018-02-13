@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a2946375-49eb-4125-9601-9da24b88f544" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PIdevBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/PIdevBundle/Resources/config/routing.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -482,7 +481,7 @@
       <workItem from="1518290885774" duration="9538000" />
       <workItem from="1518440793189" duration="1960000" />
       <workItem from="1518445097393" duration="23001000" />
-      <workItem from="1518516138660" duration="7039000" />
+      <workItem from="1518516138660" duration="7244000" />
     </task>
     <task id="LOCAL-00001" summary="modification">
       <created>1518205166911</created>
@@ -540,11 +539,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518539335682</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="modif">
+      <created>1518539457329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1518539457329</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133248000" />
+    <option name="totallyTimeSpent" value="133453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
