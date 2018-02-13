@@ -16,10 +16,10 @@ class ReclamationType extends AbstractType
         $builder ->add('user',EntityType::class
             ,array(
                 'class'=>'PIdevBundle\Entity\User',
-                'choice_label'=>'email',
+                'choice_label'=>'username',
                 'multiple'=> false ,
             ))
-            ->add('objet')
+            ->add('objet' )
             ->add('description')
             ->add('statut', HiddenType::class, array(
                 'data' => 'non traitée'))

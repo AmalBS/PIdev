@@ -56,5 +56,8 @@ class EspaceReclamationsController extends Controller
         $em->remove($reclamation);
         $em->flush();
         return $this->redirectToRoute('pi_tableRec');
+        /**
+         *
+         */
     }
 }
