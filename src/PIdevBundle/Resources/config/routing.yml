@@ -6,7 +6,7 @@ p_idev_reclamationAdmin:
     prefix:   /reclamationAdmin
 
 p_idev_homepage:
-    path:     /acceuilPrincipal
+    path:     /
     defaults: { _controller: PIdevBundle:Default:Acceuil }
 p_idev_homeVet:
       path:     /acceuilVet
