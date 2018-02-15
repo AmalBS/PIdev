@@ -13,6 +13,9 @@ Delete_Rec:
 reclamation_List:
     path:     /affiche
     defaults: { _controller: "PIdevBundle:EspAdmin:tableRec" }
+reclamation_affiche:
+    path:     /affiche/{id}
+    defaults: { _controller: "PIdevBundle:EspAdmin:tableRec" }
 reclamation_Reponse:
     path:     /reponse
     defaults: { _controller: "PIdevBundle:EspAdmin:Reponse" }

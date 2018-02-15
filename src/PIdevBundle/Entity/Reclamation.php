@@ -9,8 +9,8 @@
 namespace PIdevBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
-/**Class Reclamation2
- * @package AppBundle\Entity
+/**Class Reclamation
+ * @package PIdevBundle\Entity
  */
 
 /**
@@ -43,12 +43,26 @@ class Reclamation
      */
     private $statut;
 
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $lieu;
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $imageAnimaux;
+
 
     /**
      * @ORM\ManyToOne(targetEntity="PIdevBundle\Entity\User")
      * @ORM\JoinColumn("user_id",referencedColumnName="id")
      */
     private $user;
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    private $dateReclamation;
+
 
 
     /**
@@ -110,30 +124,6 @@ class Reclamation
     }
 
     /**
-     * Set user
-     *
-     * @param \PIdevBundle\Entity\User $user
-     *
-     * @return Reclamation
-     */
-    public function setUser(\PIdevBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \PIdevBundle\Entity\User
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
      * Set statut
      *
      * @param string $statut
@@ -155,5 +145,101 @@ class Reclamation
     public function getStatut()
     {
         return $this->statut;
+    }
+
+    /**
+     * Set lieu
+     *
+     * @param string $lieu
+     *
+     * @return Reclamation
+     */
+    public function setLieu($lieu)
+    {
+        $this->lieu = $lieu;
+
+        return $this;
+    }
+
+    /**
+     * Get lieu
+     *
+     * @return string
+     */
+    public function getLieu()
+    {
+        return $this->lieu;
+    }
+
+    /**
+     * Set imageAnimaux
+     *
+     * @param string $imageAnimaux
+     *
+     * @return Reclamation
+     */
+    public function setImageAnimaux($imageAnimaux)
+    {
+        $this->imageAnimaux = $imageAnimaux;
+
+        return $this;
+    }
+
+    /**
+     * Get imageAnimaux
+     *
+     * @return string
+     */
+    public function getImageAnimaux()
+    {
+        return $this->imageAnimaux;
+    }
+
+    /**
+     * Set dateReclamation
+     *
+     * @param string $dateReclamation
+     *
+     * @return Reclamation
+     */
+    public function setDateReclamation($dateReclamation)
+    {
+        $this->dateReclamation = $dateReclamation;
+
+        return $this;
+    }
+
+    /**
+     * Get dateReclamation
+     *
+     * @return string
+     */
+    public function getDateReclamation()
+    {
+        return $this->dateReclamation;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \PIdevBundle\Entity\User $user
+     *
+     * @return Reclamation
+     */
+    public function setUser(\PIdevBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \PIdevBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

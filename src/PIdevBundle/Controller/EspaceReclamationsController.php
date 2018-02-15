@@ -19,7 +19,7 @@ class EspaceReclamationsController extends Controller
             $em->persist($reclamation);
             $em->flush();
 
-            return $this->redirectToRoute('reclamation_Affiche', array('id' => $reclamation->getId()));
+            return $this->redirectToRoute('p_idev_home', array('id' => $reclamation->getId()));
         }
 
         return $this->render('@PIdev/EspaceReclamation/AjoutRec.html.twig', array(
@@ -34,7 +34,7 @@ class EspaceReclamationsController extends Controller
         return $this->render('PIdevBundle:EspaceReclamation:AfficheRec.html.twig', array("reclamations" => $em));
     }
 
-    public function updateAction($id, Request $request)
+    /**public function updateAction($id, Request $request)
     {
         $em=$this->getDoctrine()->getManager();
         $reclamation=$em->getRepository("PIdevBundle:Reclamation")->find($id);
@@ -48,7 +48,7 @@ class EspaceReclamationsController extends Controller
             return $this->redirectToRoute('reclamation_Affiche');
         }
         return$this->render("@PIdev/reclamation/update.html.twig",array('form'=>$Form->createView()));
-    }
+    }*/
     public function DeleteAction($id)
     {
         $em = $this->getDoctrine()->getManager();
@@ -56,8 +56,9 @@ class EspaceReclamationsController extends Controller
         $em->remove($reclamation);
         $em->flush();
         return $this->redirectToRoute('pi_tableRec');
-        /**
-         *
-         */
+    }
+    public function affichageAction($id)
+    {
+        return $this->render('PIdevBundle:Admin/tableRec:affiche.html.twig',array('id'=>$id));
     }
 }

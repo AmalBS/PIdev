@@ -1,7 +1,12 @@
-{% extends "base.html.twig" %}
+{% extends 'base.html.twig' %}
 
 {% block auth %}
-    <li><a>Reclamation</a></li>
+
+    <li><a   href="{{ path('reclamation_Ajout') }}">Reclamation</a></li>
     <li><a   href="{{ path('p_idev_homepage') }}"> se déconneter </a> </li>
 
 {% endblock %}
+
+{% block content %}
+    {{ parent() }}
+{% endblock  %}
